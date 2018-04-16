@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.version     = SpreePrintInvoice.version
   s.summary     = 'Print invoices and slips from Spree Commerce'
   s.description = s.summary
-  s.required_ruby_version = '>= 2.1.0'
+  s.required_ruby_version = '>= 2.2.2'
 
   s.author       = 'Spree Commerce'
   s.email        = 'gems@spreecommerce.com'
@@ -23,9 +23,9 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_runtime_dependency 'prawn', '~> 1.0.0'
-  s.add_dependency "solidus_api", '~> 2.5.0.beta1'
-  s.add_dependency "solidus_backend", '~> 2.5.0.beta1'
-  s.add_dependency "solidus_core", '~> 2.5.0.beta1'
+  s.add_dependency "solidus_api", [">= 1.2.0", "< 3"]
+  s.add_dependency "solidus_backend", [">= 1.2.0", "< 3"]
+  s.add_dependency "solidus_core", [">= 1.2.0", "< 3"]
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'selenium-webdriver'
