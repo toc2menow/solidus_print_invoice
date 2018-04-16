@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency "solidus_api", [">= 1.2.0", "< 3"]
   s.add_dependency "solidus_backend", [">= 1.2.0", "< 3"]
   s.add_dependency "solidus_core", [">= 1.2.0", "< 3"]
+  s.add_dependency 'deface', ['~> 1.0', '>= 1.0.2']
 
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'selenium-webdriver'
@@ -42,5 +43,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'guard-rspec'
   s.add_development_dependency 'pry-rails'
   s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'deface', ['~> 1.0', '>= 1.0.2']
 end
