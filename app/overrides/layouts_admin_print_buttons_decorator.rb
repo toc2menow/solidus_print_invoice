@@ -1,3 +1,5 @@
+require 'deface'
+
 Deface::Override.new(:virtual_path => "spree/admin/shared/_content_header",
                      :name => "print_buttons",
                      :insert_top => "[data-hook='toolbar']>ul",
